@@ -1,0 +1,189 @@
+html,
+body {
+  /* overflow-x: hidden; */
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(54, 54, 54); */
+  background-color: #202020;
+  font-family: "Afacad", sans-serif;
+}
+
+nav {
+  z-index: 1;
+  width: 100%;
+  background: #2020209a;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.navbar {
+  max-width: 1080px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  /* margin: 0; */
+  color: #ffea2e;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+li a {
+  margin-right: 50px;
+  text-decoration: none;
+  color: #fff;
+}
+
+li a:hover {
+  color: #ffea2e;
+  /* border-bottom: 2px solid #ffea2e; */
+}
+
+.portfolio-menu {
+  color: #ffea2e;
+  border-bottom: 2px solid #ffea2e;
+}
+
+.github {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.github a {
+  color: #fff;
+}
+
+.github:hover a {
+  color: #ffea2e;
+}
+
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.title h1,
+.title p {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  padding-top: 0px;
+  flex-wrap: wrap;
+}
+
+.project {
+  padding: 20px;
+  background: #444444;
+  width: 40%;
+  margin: 10px;
+  transition: 0.3s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+
+.img img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.capt {
+  color: #fff;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tech img {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.resource {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resource i {
+  font-size: 20px;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.resource i:hover {
+  color: #ffea2e;
+}
+
+.example {
+  background: #757575; /* Thisi is a example project card */
+  height: 185px;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: #ffea2e;
+}

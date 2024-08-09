@@ -1,0 +1,144 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(54, 54, 54); */
+  background-color: #202020;
+  font-family: "Afacad", sans-serif;
+}
+
+nav {
+  z-index: 1;
+  width: 100%;
+  background: #2020209a;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.navbar {
+  max-width: 1080px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  /* margin: 0; */
+  color: #ffea2e;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+li a {
+  margin-right: 50px;
+  text-decoration: none;
+  color: #fff;
+}
+
+li a:hover {
+  color: #ffea2e;
+  /* border-bottom: 2px solid #ffea2e; */
+}
+
+.certificate-menu {
+  color: #ffea2e;
+  border-bottom: 2px solid #ffea2e;
+}
+
+.github {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.github a {
+  color: #fff;
+}
+
+.github:hover a {
+  color: #ffea2e;
+}
+
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.title h1,
+.title p {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  flex-wrap: wrap;
+}
+
+.certificate {
+  width: 40%;
+}
+
+.img,
+.capt {
+  /* background: #ffffff; */
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.capt h2 {
+  margin-bottom: 0;
+}
+
+.by {
+  /* background: #ff7d7d; */
+  margin: 10px;
+  display: flex;
+  color: #fff;
+}
+
+.by p {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.img img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: #ffea2e;
+}
