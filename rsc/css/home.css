@@ -174,7 +174,6 @@ li a:hover {
 }
 
 footer {
-  position: fixed;
   display: flex;
   justify-content: center;
   margin-top: 90px;
