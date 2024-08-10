@@ -8,6 +8,10 @@ body {
   font-family: "Afacad", sans-serif;
 }
 
+.mobile-container {
+  display: none;
+}
+
 nav {
   z-index: 1;
   width: 100%;
@@ -70,27 +74,6 @@ li a:hover {
   color: #ffea2e;
 }
 
-.navbar-responsive {
-  z-index: 1;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  margin-top: 10px;
-  align-items: center;
-  flex-direction: column;
-  background: #202020f3;
-  position: absolute;
-  display: none;
-}
-
-.navbar-responsive a {
-  font-size: 50px;
-  margin: 20px;
-  z-index: 2;
-  text-decoration: none;
-  color: #ffea2e;
-}
-
 .container {
   color: #fff;
   max-width: 1080px;
@@ -105,21 +88,6 @@ li a:hover {
   justify-content: space-around;
   align-items: center;
   height: 400px;
-}
-
-.logo-responsive {
-  display: none;
-}
-
-.logo-responsive img {
-  width: 300px;
-  border: 5px solid #fff;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  box-shadow: 0px 0px 20px 1px #ffea2e;
 }
 
 .sosmed {
@@ -221,52 +189,207 @@ footer {
   nav {
     display: none;
   }
-  .logo-responsive {
-    max-width: 100vw;
+  .container {
+    display: none;
+  }
+  .mobile-container {
+    color: #fff;
     display: block;
+    margin: auto;
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burger-icon {
+    /* right: 0; */
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .burger-icon div {
+    width: 100%;
+    height: 4px;
+    background-color: #ffea2e;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-title {
+    color: #ffea2e;
+    margin: 0;
+  }
+
+  .mobile-text h1 {
+    margin: 0;
+  }
+
+  .mobile-github {
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .mobile-github a {
+    color: #fff;
+  }
+
+  .mobile-github:hover a {
+    color: #ffea2e;
+  }
+
+  .mobile-menu {
+    padding: 50px;
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background: #ffffff94;
+    border: solid #ffea2e;
+    /* box-shadow: 0px 0px 10px 2px #ffea2e; */
+    z-index: 9;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-menu ul li {
+    padding: 12px;
+    text-align: center;
+    color: #ffea2e;
+    font-size: 30px;
+  }
+
+  .mobile-menu ul li a {
+    margin: auto;
+    color: #ffffff;
+  }
+
+  .mobile-menu ul li:last-child {
+    border-bottom: none;
+  }
+
+  .burger-icon.open div:nth-child(1) {
+    transform: rotate(40deg);
+    transform-origin: 4px 5px;
+  }
+
+  .burger-icon.open div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-icon.open div:nth-child(3) {
+    transform: rotate(-40deg);
+    transform-origin: 4px -2px;
+  }
+
+  .mobile-menu.show {
+    display: block;
+  }
+
+  .mobile-contain {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .logo-responsive img {
-    width: 200px;
-  }
-  .contain {
-    justify-content: space-evenly;
     flex-direction: column;
+    margin-top: 100px;
   }
-  .logo {
-    display: none;
+  .mobile-logo img {
+    width: 300px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0px 0px 20px 1px #ffea2e;
   }
-  .sosmed {
-    max-width: 100vh;
-    flex-direction: row;
-    margin: 50px;
+  .mobile-sosmed {
+    padding: 50px;
   }
-  .sosmed i {
-    margin: 0px 10px;
+
+  .mobile-sosmed a {
+    margin: 10px;
+    color: #fff;
+  }
+
+  .mobile-sosmed i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .mobile-sosmed i:hover {
     color: #ffea2e;
   }
-  .sosmed i:hover {
-    color: #ffffff;
+
+  .mobile-text {
+    left: 0;
   }
-  .text {
-    max-width: 100vh;
+
+  .mobile-text h1 {
+    margin: 0;
+    font-size: 70px;
   }
-  body {
-    max-width: 100vw;
-    width: 100%;
-    max-height: 100vh;
-    height: 100%;
+
+  .mobile-text h3 {
+    margin: 0;
   }
-  footer {
-    display: none;
-  }
-  .footer {
-    display: block;
+
+  .mobile-skills h2 {
+    /* border-right: solid #ffea2e; */
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    margin: 0;
     color: #ffea2e;
-    width: 100%;
-    text-align: center;
+    overflow: hidden;
+    animation: berjalan 3s steps(30) infinite, slide 9s steps(3) infinite;
+    -webkit-animation: berjalan 3s steps(30) infinite, slide 9s steps(3) infinite;
+  }
+
+  .mobile-skills {
+    height: 30px;
+    overflow: hidden;
+  }
+
+  @keyframes slide {
+    from {
+      bottom: 0;
+    }
+    100% {
+      bottom: 90px;
+    }
+  }
+
+  @keyframes berjalan {
+    from {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    to {
+      width: 0;
+    }
+  }
+
+  .mobile-footer {
     bottom: 0;
     position: fixed;
   }
