@@ -324,6 +324,7 @@ footer {
   }
 
   .mobile-sosmed a {
+    text-decoration: none;
     margin: 10px;
     color: #fff;
   }
