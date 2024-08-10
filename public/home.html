@@ -35,17 +35,7 @@
         </div>
     </nav>
 
-    <div class="navbar-responsive">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Portfolio</a>
-        <a href="">Certificate</a>
-    </div>
-
     <div class="container">
-        <div class="logo-responsive">
-            <img src="../rsc/img/me/IMG_20240807_160246.jpg" alt="">
-        </div>
         <div class="contain">
             <div class="sosmed">
                 <a href="https://www.linkedin.com/in/yeremiapotu/" target="_blank" data-aos="fade-right"
@@ -72,12 +62,12 @@
                 <p data-aos="fade-up" data-aos-duration="1600">Wellcome to my personal website. 👋</p>
             </div>
             <div class="logo" data-aos="fade-left" data-aos-duration="1000">
-                <img src="../rsc/img/me/ehSorryNyandaMampann.gif" alt="">
+                <img src="../rsc/img/me/IMG_20240807_160246.jpg" alt="">
             </div>
         </div>
 
-        <footer class="animate__animated animate__fadeInUp">
-            <h3 data-aos="fade-up" data-aos-duration="1000">Made with ❤️ by yeremia potu © 2024.</h3>
+        <footer>
+            <h3>Made with ❤️ by yeremia potu © 2024.</h3>
         </footer>
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -86,9 +76,78 @@
         </script>
 
     </div>
-    <div class="footer animate__animated animate__fadeInUp">
-        <h3>Made with ❤️ by yeremia potu © 2024.</h3>
+
+    <div class="mobile-container">
+        <div class="mobile-nav">
+            <div class="burger-icon" id="burger-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="mobile-title">
+                <h1>Tuamayeremia;</h1>
+            </div>
+            <div class="mobile-github">
+                <a href="https://github.com/yeremiapotu" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Certificate</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-contain">
+            <div class="mobile-logo" data-aos="fade-left" data-aos-duration="1000">
+                <img src="../rsc/img/me/IMG_20240807_160246.jpg" alt="">
+            </div>
+
+            <div class="mobile-sosmed">
+                <a href="https://www.linkedin.com/in/yeremiapotu/" target="_blank" data-aos="fade-right"
+                    data-aos-duration="1000">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/cannotfly05/?igsh=YWJ0eWFreHFsejd4" target="_blank"
+                    data-aos="fade-right" data-aos-duration="1200">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=6282271618123&text&type=phone_number&app_absent=0"
+                    target="_blank" data-aos="fade-right" data-aos-duration="1400">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+
+            <div class="mobile-text">
+                <h3 data-aos="fade-up" data-aos-duration="1000">Hello world!, i'm</h3>
+                <h1 data-aos="fade-up" data-aos-duration="1200">Yeremia Potu</h1>
+                <div class="mobile-skills" data-aos="fade-up" data-aos-duration="1400">
+                    <h2>Web development</h2>
+                    <h2>Front-End Developer</h2>
+                    <h2>Back-End developer</h2>
+                </div>
+                <p data-aos="fade-up" data-aos-duration="1600">Wellcome to my personal website. 👋</p>
+            </div>
+
+            <footer class="mobile-footer">
+                <h3>Made with ❤️ by yeremia potu © 2024.</h3>
+            </footer>
+        </div>
     </div>
+    <script>
+        const burgerIcon = document.getElementById('burger-icon');
+        const menu = document.getElementById('menu');
+
+        burgerIcon.addEventListener('click', function () {
+            burgerIcon.classList.toggle('open');
+            menu.classList.toggle('show');
+        });
+    </script>
 </body>
 
 </html>
