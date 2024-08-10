@@ -359,33 +359,3 @@ footer {
   padding: 20px;
   color: #ffea2e;
 }
-
-@media screen and (max-width: 767px) {
-  /* nav {
-    display: none;
-  } */
-  body {
-    max-width: 100vw;
-    width: 100%;
-  }
-  .about {
-    flex-direction: column;
-  }
-  .text {
-    padding: 0;
-  }
-  .text h1 {
-    text-align: center;
-  }
-  footer {
-    display: none;
-  }
-  .footer {
-    display: block;
-    color: #ffea2e;
-    width: 100%;
-    text-align: center;
-    bottom: 0;
-    position: fixed;
-  }
-}
