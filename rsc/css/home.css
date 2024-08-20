@@ -441,7 +441,8 @@ footer {
   }
 
   hr {
-    width: 90%;
+    margin-top: 50px;
+    width: 100%;
   }
 
   .cr {
