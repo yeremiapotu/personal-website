@@ -2,8 +2,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-/*   overflow-y: hidden; */
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
   background-color: #202020;
   font-family: "Afacad", sans-serif;
 }
@@ -177,8 +177,9 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 90px;
+  margin-bottom: 10px;
   padding: 20px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer {
@@ -206,9 +207,12 @@ footer {
   }
 
   .mobile-nav {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    z-index: 10;
   }
 
   .burger-icon {
@@ -220,7 +224,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    z-index: 10;
   }
 
   .burger-icon div {
@@ -232,38 +235,22 @@ footer {
     transition: all 0.3s ease;
   }
 
-  .mobile-title {
-    color: #ffea2e;
-    font-size: 10px;
-    margin: 0;
-  }
-
-  .mobile-github {
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-  .mobile-github a {
-    color: #fff;
-  }
-
-  .mobile-github:hover a {
-    color: #ffea2e;
+  #burger-icon.clicked div {
+    background: #000000;
   }
 
   .mobile-menu {
-    padding: 50px;
-    /* margin-top: 10px; */
+    top: 0;
+    width: 100%;
     display: none;
     position: absolute;
     background: #ffffff;
-    /* border: solid #ffea2e; */
-    /* box-shadow: 0px 0px 10px 2px #ffea2e; */
     z-index: 9;
   }
 
   .mobile-menu ul {
     display: flex;
+    align-items: start;
     flex-direction: column;
     list-style-type: none;
     margin: 0;
@@ -274,7 +261,7 @@ footer {
     padding: 12px;
     text-align: center;
     color: #ffea2e;
-    font-size: 30px;
+    /* font-size: 30px; */
   }
 
   .mobile-menu ul li a {
@@ -320,14 +307,15 @@ footer {
     margin-top: 20px;
   }
   .mobile-logo img {
-    width: 200px;
-    border: 5px solid #fff;
+    margin-top: 60px;
+    width: 220px;
+    border: 3px solid #fff;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    box-shadow: 0px 0px 20px 1px #ffea2e;
+    box-shadow: 0px 0px 10px 1px #ffea2e;
   }
   .mobile-sosmed {
     padding: 50px;
@@ -401,8 +389,8 @@ footer {
   }
 
   .mobile-footer {
-    bottom: 0;
-    position: fixed;
+    width: 100%;
+    background: #000000;
   }
 }
 
