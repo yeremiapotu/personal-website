@@ -77,6 +77,19 @@
 
     </div>
 
+    <!-- Mobile view -->
+
+    <div class="mobile-menu" id="menu">
+        <div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="certificate.html">Certificate</a></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="mobile-container">
         <div class="mobile-nav">
             <div class="burger-icon" id="burger-icon">
@@ -84,23 +97,6 @@
                 <div></div>
                 <div></div>
             </div>
-            <div class="mobile-title">
-                <h1>Tuamayeremia;</h1>
-            </div>
-            <div class="mobile-github">
-                <a href="https://github.com/yeremiapotu" target="_blank">
-                    <i class="bi bi-github"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="mobile-menu" id="menu">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Certificate</a></li>
-            </ul>
         </div>
 
         <div class="mobile-contain">
@@ -117,9 +113,8 @@
                     data-aos="fade-right" data-aos-duration="1200">
                     <i class="bi bi-instagram"></i>
                 </a>
-                <a href="https://api.whatsapp.com/send/?phone=6282271618123&text&type=phone_number&app_absent=0"
-                    target="_blank" data-aos="fade-right" data-aos-duration="1400">
-                    <i class="bi bi-whatsapp"></i>
+                <a href="https://github.com/yeremiapotu" target="_blank" data-aos="fade-right" data-aos-duration="1400">
+                    <i class="bi bi-github"></i>
                 </a>
             </div>
 
@@ -135,7 +130,7 @@
             </div>
 
             <footer class="mobile-footer">
-                <h3>Made with ❤️ by yeremia potu © 2024.</h3>
+                <p>Made with ❤️ by yeremia potu © 2024.</p>
             </footer>
         </div>
     </div>
@@ -146,6 +141,10 @@
         burgerIcon.addEventListener('click', function () {
             burgerIcon.classList.toggle('open');
             menu.classList.toggle('show');
+        });
+
+        document.getElementById('burger-icon').addEventListener("click", function () {
+            this.classList.toggle("clicked");
         });
     </script>
 </body>
