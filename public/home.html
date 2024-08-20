@@ -66,10 +66,6 @@
             </div>
         </div>
 
-        <footer>
-            <h3>Made with ❤️ by yeremia potu © 2024.</h3>
-        </footer>
-
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
@@ -79,16 +75,6 @@
 
     <!-- Mobile view -->
 
-    <div class="mobile-menu" id="menu">
-        <div>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="certificate.html">Certificate</a></li>
-            </ul>
-        </div>
-    </div>
 
     <div class="mobile-container">
         <div class="mobile-nav">
@@ -99,12 +85,23 @@
             </div>
         </div>
 
+        <div class="mobile-menu" id="menu">
+            <div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="certificate.html">Certificate</a></li>
+                </ul>
+            </div>
+        </div>
+
         <div class="mobile-contain">
             <div class="mobile-logo" data-aos="fade-left" data-aos-duration="1000">
                 <img src="../rsc/img/me/IMG_20240807_160246.jpg" alt="">
             </div>
 
-            <div class="mobile-sosmed">
+            <div class="mobile-sosmed" data-aos="fade-right" data-aos-duration="1000">
                 <a href="https://www.linkedin.com/in/yeremiapotu/" target="_blank" data-aos="fade-right"
                     data-aos-duration="1000">
                     <i class="bi bi-linkedin"></i>
@@ -129,10 +126,40 @@
                 <p data-aos="fade-up" data-aos-duration="1600">Wellcome to my personal website. 👋</p>
             </div>
 
-            <footer class="mobile-footer">
-                <p>Made with ❤️ by yeremia potu © 2024.</p>
-            </footer>
         </div>
+        <footer class="mobile-footer">
+            <div class="first-navigate" data-aos="fade-up" data-aos-duration="1000">
+                <h3>Navigate</h3>
+                <p><a href="about.html">About</a></p>
+                <p><a href="portfolio.html">Portfolio</a></p>
+                <p><a href="certificate.html">Certificate</a></p>
+            </div>
+            <div class="second-navigate" data-aos="fade-up" data-aos-duration="1000">
+                <div class="info">
+                    <i class="bi bi-whatsapp"></i>
+                    <div class="capt">
+                        <h3>Whatsapp</h3>
+                        <p>+6282271618123</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <i class="bi bi-envelope-at-fill"></i>
+                    <div class="capt">
+                        <h3>Email</h3>
+                        <p>yeremiapotu05@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <div class="capt">
+                        <h3>Location</h3>
+                        <p>Manado, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+            <hr data-aos="fade-up" data-aos-duration="1000">
+            <p class="cr" data-aos="fade-up" data-aos-duration="1000">Made with ❤️ by yeremia potu © 2024.</p>
+        </footer>
     </div>
     <script>
         const burgerIcon = document.getElementById('burger-icon');
