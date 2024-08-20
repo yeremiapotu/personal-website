@@ -408,6 +408,8 @@ footer {
   }
 
   .first-navigate p a {
+    margin-top: 0;
+    margin-bottom: 10px;
     list-style: none;
     text-decoration: none;
     color: #fff;
