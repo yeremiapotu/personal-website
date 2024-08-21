@@ -70,12 +70,122 @@
             <h3>Made with ❤️ by yeremia potu © 2024.</h3>
         </footer>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-
     </div>
+
+    <!-- Mobile view -->
+
+    <div class="mobile-container">
+        <div class="mobile-nav">
+            <div class="burger-icon" id="burger-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="menu">
+            <div>
+                <ul>
+                    <h3 class="nav-title">Tuamayeremia;</h3>
+                    <hr>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="certificate.html">Certificate</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mobile-contain">
+            <div class="title">
+                <h1 data-aos="fade-up" data-aos-duration="1000">Certificates</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">These are all my certificates</p>
+            </div>
+            <div class="contain">
+                <div class="certificate" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="img">
+                        <img src="../rsc/img/certificate/Screenshot 2024-08-07 182204.png" alt="certificate1">
+                    </div>
+                    <div class="capt">
+                        <h2>Menguasai Microsoft Excel untuk Admin Online Shop</h2>
+                    </div>
+                    <div class="by">
+                        <p>Karier.mu</p>
+                        <p>04-06-2024</p>
+                    </div>
+                </div>
+                <div class="certificate" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="img">
+                        <img src="../rsc/img/certificate/Screenshot 2024-08-07 182307.png" alt="certificate1">
+                    </div>
+                    <div class="capt">
+                        <h2>Manajemen Karyawan bagi Staf Sumber Daya Manusia</h2>
+                    </div>
+                    <div class="by">
+                        <p>Karier.mu</p>
+                        <p>03-07-2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-footer">
+            <div class="first-navigate">
+                <h3>Navigate</h3>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="portfolio.html">Portfolio</a></p>
+                <p><a href="certificate.html">Certificate</a></p>
+            </div>
+            <div class="second-navigate">
+                <h3>Contact</h3>
+                <div class="info">
+                    <i class="bi bi-whatsapp"></i>
+                    <div class="capt">
+                        <!-- <h3>Whatsapp</h3> -->
+                        <p>+6282271618123</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <i class="bi bi-envelope-at-fill"></i>
+                    <div class="capt">
+                        <!-- <h3>Email</h3> -->
+                        <p>yeremiapotu05@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <div class="capt">
+                        <!-- <h3>Location</h3> -->
+                        <p>Manado, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cr">
+                <hr>
+                <p>Made with ❤️ by yeremia potu © 2024.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const burgerIcon = document.getElementById('burger-icon');
+        const menu = document.getElementById('menu');
+
+        burgerIcon.addEventListener('click', function () {
+            burgerIcon.classList.toggle('open');
+            menu.classList.toggle('show');
+        });
+
+        document.getElementById('burger-icon').addEventListener("click", function () {
+            this.classList.toggle("clicked");
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
