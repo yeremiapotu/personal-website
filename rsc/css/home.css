@@ -209,7 +209,7 @@ footer {
   }
 
   .burger-icon {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 10px;
     width: 30px;
     height: 20px;
@@ -231,6 +231,12 @@ footer {
 
   #burger-icon.clicked div {
     background: #000000;
+  }
+
+  .nav-title {
+    color: #000000;
+    padding: 12px;
+    margin: 0;
   }
 
   .mobile-menu {
@@ -419,7 +425,7 @@ footer {
   }
 
   .info {
-    margin: 10px 0px;
+    margin: 20px 0px;
     display: flex;
     align-items: center;
   }
