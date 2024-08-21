@@ -422,6 +422,7 @@ footer {
     color: #000000;
     padding: 12px;
     margin: 0;
+    margin-top: 5px;
   }
 
   .mobile-menu {
@@ -490,7 +491,7 @@ footer {
 
   .mobile-about {
     padding: 30px;
-    padding-top: 50px;
+    padding-top: 60px;
     margin: auto;
     display: flex;
     flex-direction: column;
