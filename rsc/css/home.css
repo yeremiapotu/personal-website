@@ -17,7 +17,7 @@ nav {
   width: 100%;
   background: #2020209a;
   color: #fff;
-  padding: 10px;
+  padding: 10px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +80,7 @@ li a:hover {
   width: 100%;
   margin: auto;
   margin-top: 150px;
+  margin-bottom: 100px;
   padding: 20px;
 }
 
@@ -174,12 +175,66 @@ li a:hover {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 90px;
-  margin-bottom: 10px;
-  padding: 20px;
+  max-width: 100vw;
+  width: 100%;
+  background: #161922;
   color: #ffffff;
+}
+
+.footer-first-contain {
+  padding: 50px;
+  max-width: 1080px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 200px;
+}
+
+.navigate ul {
+  gap: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ft-contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.other-sosmed a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.other-sosmed a:hover {
+  color: #ffea2e;
+}
+
+.footer-second-contain {
+  max-width: 1080px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+hr {
+  width: 100%;
+}
+
+.footer-second-contain p {
+  padding: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -191,6 +246,10 @@ footer {
     display: none;
   }
   .container {
+    display: none;
+  }
+
+  footer {
     display: none;
   }
   .mobile-container {
@@ -434,7 +493,7 @@ footer {
   .info i {
     margin-right: 10px;
     font-size: 20px;
-    color: #ffea2e;
+    color: #ffffff;
   }
 
   .info p {
