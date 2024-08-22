@@ -213,6 +213,11 @@ hr {
   .container {
     display: none;
   }
+
+  footer {
+    display: none;
+  }
+
   .mobile-container {
     display: block;
     color: #fff;
