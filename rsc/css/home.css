@@ -79,8 +79,8 @@ li a:hover {
   max-width: 1080px;
   width: 100%;
   margin: auto;
-  margin-top: 150px;
-  margin-bottom: 100px;
+  /* margin-top: 150px; */
+  /* margin-bottom: 100px; */
   padding: 20px;
 }
 
@@ -88,7 +88,7 @@ li a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 400px;
+  height: 100vh;
 }
 
 .sosmed {
@@ -133,8 +133,12 @@ li a:hover {
   margin: 0;
   color: #ffea2e;
   overflow: hidden;
-  animation: berjalan 3s steps(30) infinite, slide 9s steps(3) infinite;
-  -webkit-animation: berjalan 3s steps(30) infinite, slide 9s steps(3) infinite;
+  animation:
+    berjalan 3s steps(30) infinite,
+    slide 9s steps(3) infinite;
+  -webkit-animation:
+    berjalan 3s steps(30) infinite,
+    slide 9s steps(3) infinite;
 }
 
 .skills {
@@ -163,15 +167,67 @@ li a:hover {
   }
 }
 
+.logo {
+  padding: 20px;
+  background: #333333;
+  backdrop-filter: blur(10px);
+  box-shadow: 10px 10px 10px -10px #000000;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition: border-radius 0.3s ease;
+  -webkit-transition: border-radius 0.3s ease;
+  -moz-transition: border-radius 0.3s ease;
+  -ms-transition: border-radius 0.3s ease;
+  -o-transition: border-radius 0.3s ease;
+}
+
+.logo:hover {
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+}
+
 .logo img {
   width: 300px;
-  border: 5px solid #fff;
+  border: 5px solid #ffffff;
+  /* box-shadow: 0px 0px 10px 1px #ffffff; */
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  box-shadow: 0px 0px 20px 1px #ffea2e;
+  transition:
+    border-radius 0.3s ease,
+    border 0.3s ease,
+    box-shadow 0.3s ease;
+  -webkit-transition:
+    border-radius 0.3s ease,
+    border 0.3s ease,
+    box-shadow 0.3s ease;
+  -moz-transition:
+    border-radius 0.3s ease,
+    border 0.3s ease box-shadow 0.3s ease;
+  -ms-transition:
+    border-radius 0.3s ease,
+    border 0.3s ease box-shadow 0.3s ease;
+  -o-transition:
+    border-radius 0.3s ease,
+    border 0.3s ease box-shadow 0.3s ease;
+}
+
+.logo img:hover {
+  border: 5px solid #ffffff;
+  box-shadow: 0px 0px 10px 1px #ffffff;
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  -o-border-radius: 80px;
 }
 
 footer {
@@ -364,19 +420,32 @@ hr {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 50px;
+    height: 100vh;
+    /* padding-top: 50px; */
+    /* padding: 20px; */
+  }
+  .mobile-logo {
     padding: 20px;
+    margin-top: 160px;
+    background: #333333;
+    backdrop-filter: blur(10px);
+    border-radius: 80px;
+    box-shadow: 10px 10px 10px -10px #000000;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
   }
   .mobile-logo img {
-    margin-top: 60px;
     width: 220px;
     border: 3px solid #fff;
+    /*box-shadow: 0px 0px 10px 1px #ffea2e;
+    */
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    box-shadow: 0px 0px 10px 1px #ffea2e;
   }
   .mobile-sosmed {
     padding: 50px;
@@ -384,12 +453,12 @@ hr {
 
   .mobile-sosmed a {
     text-decoration: none;
-    margin: 10px;
+    margin: 20px;
     color: #fff;
   }
 
   .mobile-sosmed i {
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
   }
 
@@ -419,8 +488,12 @@ hr {
     margin: 0;
     color: #ffea2e;
     overflow: hidden;
-    animation: berjalan 3s steps(30) infinite, slide 9s steps(3) infinite;
-    -webkit-animation: berjalan 3s steps(30) infinite, slide 9s steps(3) infinite;
+    animation:
+      berjalan 3s steps(30) infinite,
+      slide 9s steps(3) infinite;
+    -webkit-animation:
+      berjalan 3s steps(30) infinite,
+      slide 9s steps(3) infinite;
   }
 
   .mobile-skills {

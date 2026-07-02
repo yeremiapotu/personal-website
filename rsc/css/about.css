@@ -194,7 +194,9 @@ li a:hover {
 .tech h2 {
   color: #fff;
   display: inline-block;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
 }
 
 .tech:hover h2 {
@@ -220,7 +222,9 @@ li a:hover {
   margin-left: 60px;
   margin-top: 80px;
   opacity: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
 }
 
 .tech:hover p {
@@ -665,7 +669,7 @@ hr {
   .info i {
     margin-right: 10px;
     font-size: 20px;
-    color: #fff;
+    color: #ffffff;
   }
 
   .info p {
