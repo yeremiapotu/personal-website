@@ -421,10 +421,9 @@ hr {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    /* padding-top: 50px; */
-    /* padding: 20px; */
   }
   .mobile-logo {
+    margin-top: -20px;
     padding: 20px;
     background: #333333;
     backdrop-filter: blur(10px);
