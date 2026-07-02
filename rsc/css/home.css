@@ -522,7 +522,7 @@ hr {
   }
 
   .mobile-footer {
-    margin-top: 90px;
+    /* margin-top: 90px; */
     padding: 30px;
     background: #161922;
     display: flex;
