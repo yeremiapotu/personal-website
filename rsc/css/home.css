@@ -423,7 +423,7 @@ hr {
     height: 100vh;
   }
   .mobile-logo {
-    margin-top: -50px;
+    margin-top: -20px;
     padding: 20px;
     background: #333333;
     backdrop-filter: blur(10px);
